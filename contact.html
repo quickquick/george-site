@@ -54,7 +54,8 @@
 
         @media (max-width: 680px) {
             #contact-container {
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: center;
                 /* border: 1px solid red; */
                 height: 100vh;
             }
@@ -63,9 +64,14 @@
                 font-size: 1.5rem;
             }
 
+            #contact-container .contact-image {
+                /* border: 2px solid blue; */
+                /* flex: 1; */
+            }
+
             #contact-container .contact-image > img  {
                 border-radius: 2em;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
     </style>
@@ -79,7 +85,6 @@
             <p><span>Class:</span> JSS 1</p>
             <p><span>Favourite tokens:</span>BTC, ETH, SOL</p>
         </div>
-
     </div>
    
     
