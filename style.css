@@ -43,7 +43,7 @@ span {
     flex-shrink: 0;
     /* flex: 1; */
     text-align: center;
-    flex-basis: 600px;
+    flex-basis: 900px;
 }
 
 .navigation > nav li {
@@ -204,13 +204,13 @@ span {
 
 @media (max-width: 680px) {
     #nav-container {
-        /* border: 2px solid blue; */
+        border: 2px solid blue;
         display: flex;
         justify-content: flex-start;
     }
     .navigation {
         /* border: 1px solid red; */
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         flex: 1;
     }
 
@@ -223,12 +223,21 @@ span {
     }
 
     #second-container {
-        /* border: 2px solid red; */
-        height: 100vh;
-        padding: 0;
+        border: 2px solid red;
+        height: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        /* margin: 0; */
         width: 100%;
     }
 
+    .sec-section1 {
+        border: 2px solid purple;
+        margin: 0;
+        padding-top: 30px;
+    }
     .sec-section1 h1 {
         text-align: left;
     }
@@ -237,6 +246,7 @@ span {
     /* border: 2px solid yellow; */
     flex: 1;
     display: none;
+    padding: 0;
     }
 
     .pricing-container {
