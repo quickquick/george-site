@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+span {
+    color: #1B4433;
+    color: #3FA387;
+}
+
+#nav-container {
+    /* border: 2px solid whitesmoke; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    height: 10vh;
+    padding-top: 15px;
+    font-size: 1.3rem;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    /* gap: 50px; */
+}
+
+.common-nav {
+    flex: 0;
+}
+
+.logo {
+    /* border: 2px solid blue; */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.navigation {
+    /* border: 2px solid green; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* flex: 1; */
+    text-align: center;
+    flex-basis: 600px;
+}
+
+.navigation > nav li {
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.navigation > nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hire-me {
+    /* border: 2px solid yellow; */
+    border-radius: 2em;
+    background-color: #1C1C1C;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* flex: 1; */
+    text-align: center;
+    padding: 12px 30px;
+    flex-basis: 100px;
+}
+
+.hire-me > p {
+    color: black;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#second-container {
+    /* border: 2px solid red; */
+    display: inline-flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    height: 60vh;
+    width: 95%;
+    /* padding-top: 100px;
+    padding-left: 40px; */
+    padding: 40px 20px;
+    margin-bottom: 50px;
+}
+
+.sec-section1 {
+    /* border: 2px solid green; */
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    flex: 1;
+    align-self: flex-start;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.sec-section1 > .sec-profile {
+    /* border: 2px solid purple; */
+    padding-bottom: 40px;
+    font-size: 2rem;
+}
+
+.sec-section1 .sec-description {
+    /* border: 1px solid coral; */
+    padding-bottom: 30px;
+    color: #3FA387;
+}
+
+.sec-section1 .sec-contact > button {
+    background-color:  #96F174;
+    border: none;
+    border-radius: 2.2em;
+    padding: 15px 25px;
+}
+
+.sec-section1 .role {
+    padding-top: 40px;
+}
+
+.sec-section2 {
+    /* border: 2px solid yellow; */
+    flex: 1;
+    /* padding-left: 70px; */
+}
+
+.sec-section2 .sec-image-george img {
+    /* border: 1px solid blue; */
+    border-radius: 1.5em;
+    width: 80%;
+    height: 60vh;
+    margin-left: 50px;
+}
+
+.sec-section1, .sec-section2 {
+    padding-top: 50px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.pricing-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    gap: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    }
+
+.pricing-container > .pricing-plan {
+    /* border: 2px solid blue; */
+    border-radius: 2em;
+    flex-basis: 300px;
+    /* max-width: 400px; */
+    flex: 1;
+    padding: 70px 20px;
+}
+
+.pricing-plan > div {
+    padding-bottom: 1px;
+}
+
+.plan-title {
+    font-size: 1.5rem;
+}
+
+    .plan-price {
+        color: #3FA387;
+        font-size: 3rem;
+        font-weight: bold;
+        opacity: 1;
+    }
+
+    .basic {background-image: url(./asset/images/bg1.png); opacity: 0.7;}
+    .standard {background-image: url(./asset/images/bg2.png); opacity: 0.7;}
+    .premium {background-image: url(./asset/images/bg3.png); opacity: 0.7;}
+
+    .plan-button {
+    border: none;
+    border-radius: 0.4em;
+    background-color: lime;
+    padding: 10px;
+    }
+
+    .pricing-container .plan-features {
+    list-style: none;
+    }
+
+    li {
+    padding-bottom: 20px;
+    }
+
+    sup {
+    font-size: 0.6rem;
+    }
+
+@media (max-width: 680px) {
+    #nav-container {
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .navigation {
+        /* border: 1px solid red; */
+        font-size: 0.6rem;
+        flex: 1;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hire-me {
+        display: none;
+    }
+
+    #second-container {
+        /* border: 2px solid red; */
+        height: 100vh;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sec-section1 h1 {
+        text-align: left;
+    }
+
+    .sec-section2 {
+    /* border: 2px solid yellow; */
+    flex: 1;
+    display: none;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        height: 100%;
+    }
+}
