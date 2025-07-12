@@ -204,14 +204,22 @@ span {
 
 @media (max-width: 680px) {
     #nav-container {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         display: flex;
         justify-content: flex-start;
+        padding: 0;
+        /* width: 100%; */
     }
     .navigation {
         /* border: 1px solid red; */
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         flex: 1;
+        padding-right: 50px;
+    }
+
+    .navigation nav ul li {
+        /* border: 2px solid white; */
+        padding: 5px;
     }
 
     .logo {
@@ -223,7 +231,7 @@ span {
     }
 
     #second-container {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: 100%;
         padding-top: 0;
         padding-left: 0;
@@ -234,7 +242,8 @@ span {
     }
 
     .sec-section1 {
-        border: 2px solid purple;
+        border-right: 2px solid purple;
+        border-left: 2px solid purple;
         margin: 0;
         padding-top: 30px;
     }
