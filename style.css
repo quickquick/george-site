@@ -243,4 +243,8 @@ span {
         flex-direction: column;
         height: 100%;
     }
+
+    .pricing-plan {
+        flex: 1;
+    }
 }
