@@ -12,6 +12,10 @@ span {
     color: #3FA387;
 }
 
+a {
+    text-decoration: none;
+}
+
 #nav-container {
     /* border: 2px solid whitesmoke; */
     display: flex;
@@ -77,16 +81,17 @@ span {
 
 #second-container {
     /* border: 2px solid red; */
+    font-family: "Libre Baskerville", serif;
     display: inline-flex;
     flex-flow: row nowrap;
     /* justify-content: space-between; */
     /* align-content: center; */
-    height: 60vh;
+    height: 80vh;
     width: 95%;
     /* padding-top: 100px;
     padding-left: 40px; */
     padding: 40px 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .sec-section1 {
@@ -113,7 +118,7 @@ span {
 }
 
 .sec-section1 .sec-contact > button {
-    background-color:  #96F174;
+    background-color:  #7FE85C;
     border: none;
     border-radius: 2.2em;
     padding: 15px 25px;
@@ -130,11 +135,12 @@ span {
 }
 
 .sec-section2 .sec-image-george img {
-    /* border: 1px solid blue; */
+    border: 1px solid #7FE85C;
     border-radius: 1.5em;
     width: 80%;
     height: 60vh;
     margin-left: 50px;
+    object-fit: contain;
 }
 
 .sec-section1, .sec-section2 {
@@ -143,64 +149,220 @@ span {
 
 /*-------------------------------------------------------------------------------------------------*/
 
-.pricing-container {
+#third-container {
+    /* border: 2px solid red; */
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0px 40px;
+    /* height: 40vh; */
+    margin-bottom: 150px;
+}
+
+.common-third {
+    /* border: 2px solid blue; */
+    /* flex: 1; */
+}
+
+.third-about-me {
+    flex: 1;
+}
+
+.third-about-me h3 {
+    /* border: 2px solid purple; */
+    color: #719366;
+    margin-bottom: 30px;
+}
+
+.i-can-deliver {
+    /* border: 2px solid blue; */
+    font-size: 2.8rem;
+}
+
+.third-about-me p {
+    /* border: 2px solid yellow; */
+    margin-bottom: 40px;
+}
+
+.third-image {
+    /* border: 2px solid purple; */
+    align-self: center;
+    margin-right: 250px;
+}
+
+.know-more {
+    background-color: black;
+    border: 1.5px solid #7FE85C;
+    border-radius: 1.5rem;
+    color:#7FE85C;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#forth-container {
+    font-family: "Libre Baskerville", serif;
+    font-weight: normal;
+    background-color: white;
+    /* border: 2px solid red; */
+    color: black;
+    display: flex;
+    padding: 70px 40px;
+    margin-bottom: 100px;
+}
+
+.common-forth {
+    /* border: 2px solid blue; */
+    flex: 1;
+}
+
+.forth-text {
+    /* border: 2px solid purple; */
+    /* align-self: center; */
+    font-size: 1.5rem;
+    padding: 30px 0px;
+    text-align: left;
+}
+
+.forth-text .forth-120, .forth-76, .forth-8 {
+    /* border: 2px solid blue; */
+    font-size: 3rem;
+    float: left;
+    padding-top: 15px;
+    padding-right: 80px;
+    width: 100px;
+}
+
+.forth-text p em {
+    color: #7FE85C;
+    font-weight: bolder;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#fifth-container {
+    font-family: "Libre Baskerville", serif;
     /* border: 2px solid red; */
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: nowrap; */
-    gap: 50px;
-    /* justify-content: center; */
+    flex-flow: column nowrap;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-    }
+    margin-bottom: 200px;
+}
 
-.pricing-container > .pricing-plan {
-    /* border: 2px solid blue; */
-    border-radius: 2em;
-    flex-basis: 300px;
-    /* max-width: 400px; */
+.fifth-content {
+    /* border: 2px solid yellow; */
     flex: 1;
-    padding: 70px 20px;
 }
 
-.pricing-plan > div {
-    padding-bottom: 1px;
+.fifth-content h3, .available-services {
+    /* border: 2px solid blue; */
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-.plan-title {
-    font-size: 1.5rem;
+.fifth-content h3 {
+    color: #647C5C;
+    font-weight: normal;
+    font-size: 1.4rem;
 }
 
-    .plan-price {
-        color: #3FA387;
-        font-size: 3rem;
-        font-weight: bold;
-        opacity: 1;
+.available-services {
+    font-size: 3rem;
+}
+
+.fifth-description {
+    color: #1E302A; 
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#sixth-container {
+    font-family: "Libre Baskerville", serif;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.sixth-content {
+    /* border: 2px solid blue; */
+    border-radius: 0.7em;
+    background-color: #1E1E1E;
+    font-size: 0.8rem;
+    text-align: left;
+    position: relative;
+    padding: 80px 20px;
+    /* flex-basis: 200px; */
+}
+
+.sixth-content h3 {
+    color: #F3F3F3;
+    margin-bottom: 20px;
+}
+
+.sixth-content p {
+    color: #959595;
+}
+
+.sixth-content img {
+    /* border: 2px solid purple; */
+    position: absolute;
+    top: -130px;
+    right: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 681px) and (max-width: 1024px) {
+    body {
+        /* background-color: blue; */
     }
 
-    .basic {background-image: url(./asset/images/bg1.png); opacity: 1;}
-    .standard {background-image: url(./asset/images/bg2.png); opacity: 1;}
-    .premium {background-image: url(./asset/images/bg3.png); opacity: 1;}
-
-    .plan-button {
-    border: none;
-    border-radius: 0.4em;
-    background-color: lime;
-    padding: 10px;
+    #second-container {
+        margin-bottom: 200px;
+    }
+    
+    #third-container {
+        /* border: 2px solid blue; */
     }
 
-    .pricing-container .plan-features {
-    list-style: none;
+    .third-image {
+        display: none;
     }
 
-    li {
-    padding-bottom: 20px;
+    .forth-text .forth-120, .forth-76, .forth-8 {
+    /* border: 2px solid blue; */
+    font-size: 2.5rem;
+    float: left;
+    padding-top: 15px;
+    padding-right: 90px;
+    width: 50px;
     }
+}
 
-    sup {
-    font-size: 0.6rem;
-    }
 
 @media (max-width: 680px) {
     #nav-container {
@@ -239,6 +401,7 @@ span {
         padding-bottom: 0;
         /* margin: 0; */
         width: 100%;
+        margin-bottom: 100px;
     }
 
     .sec-section1 {
@@ -254,18 +417,119 @@ span {
     }
 
     .sec-section2 {
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     flex: 1;
     display: none;
-    padding: 0;
+    padding: 10px;
     }
 
+    #third-container {
+        /* border: 2px solid red; */
+        margin-bottom: 100px;
+    }
+
+    .third-image {
+        display: none;
+    }
+
+    #forth-container {
+        /* border: 2px solid blue; */
+    }
+
+    .forth-text {
+        display: none;
+    }
+
+    #sixth-container {
+        /* border: 2px solid blue; */
+        gap: 80px;
+    }
+    
     .pricing-container {
+        /* border: 2px solid red; */
         flex-direction: column;
         height: 100%;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        /* align-content: center; */
+        /* padding: 0px 100px; */
     }
 
     .pricing-plan {
+        /* border: 2px solid blue; */
+        /* max-width: 250px; */
         flex: 1;
     }
+
+    .plan-price {
+        /* font-size: 2rem; */
+    }
+} /* End of @max-width: 680px */
+
+
+
+
+
+
+
+
+
+/* .pricing-container {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    }
+
+.pricing-container > .pricing-plan {
+    border-radius: 2em;
+    flex-basis: 200px;
+    padding: 70px 40px;
 }
+
+.pricing-plan > div {
+    padding-bottom: 1px;
+}
+
+.plan-title {
+    font-size: 1.5rem;
+}
+
+.plan-price {
+    color: #3FA387;
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.basic {background-image: url(./asset/images/bg1.png); opacity: 1;}
+.standard {background-image: url(./asset/images/bg2.png); opacity: 1;}
+.premium {background-image: url(./asset/images/bg3.png); opacity: 1;}
+
+.plan-button {
+border: none;
+border-radius: 0.4em;
+background-color: lime;
+padding: 10px;
+}
+
+.pricing-container .plan-features {
+list-style: none;
+}
+
+li {
+padding-bottom: 20px;
+}
+
+.pricing-container {
+    display: none;
+} 
+
+sup {
+    font-size: 0.6rem;
+}
+
+*/
