@@ -405,8 +405,8 @@ a {
     }
 
     .sec-section1 {
-        border-right: 2px solid purple;
-        border-left: 2px solid purple;
+        /* border-right: 2px solid purple;
+        border-left: 2px solid purple; */
         /* border: 2px solid yellow; */
         margin: 0;
         padding-top: 30px;
@@ -440,6 +440,10 @@ a {
 
     .forth-text {
         display: none;
+    }
+
+    #fifth-container {
+        width: 100%;
     }
 
     #sixth-container {
