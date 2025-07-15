@@ -370,7 +370,7 @@ a {
         display: flex;
         justify-content: flex-start;
         padding: 0;
-        /* width: 100%; */
+        width: 100%;
     }
     .navigation {
         /* border: 1px solid red; */
@@ -425,6 +425,7 @@ a {
 
     #third-container {
         /* border: 2px solid red; */
+        width: 100%;
         margin-bottom: 100px;
     }
 
@@ -434,6 +435,7 @@ a {
 
     #forth-container {
         /* border: 2px solid blue; */
+        width: 100%;
     }
 
     .forth-text {
@@ -442,6 +444,7 @@ a {
 
     #sixth-container {
         /* border: 2px solid blue; */
+        width: 100%;
         gap: 80px;
     }
     
