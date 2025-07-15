@@ -396,9 +396,10 @@ a {
         /* border: 2px solid red; */
         height: 100%;
         padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 0;
+        flex-direction: column;
         /* margin: 0; */
         width: 100%;
         margin-bottom: 100px;
@@ -425,6 +426,8 @@ a {
 
     #third-container {
         /* border: 2px solid red; */
+        padding-left: 40px;
+        padding-right: 40px;
         width: 100%;
         margin-bottom: 100px;
     }
